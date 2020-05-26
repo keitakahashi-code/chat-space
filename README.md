@@ -43,6 +43,7 @@ Things you may want to cover:
 |id|integer|null: false, foreign_key: true|
 |chat_name|string|null: false|
 |member|string|null: false|
+### Association
 - has_many :users, through: groups_users
 
 
