@@ -41,7 +41,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false, foreign_key: true|
-|name|string|null: false|
+|name|string|null :false, unique :true|
 ### Association
 - has_many :users, through: groups_users
 - has_many :messages
@@ -61,7 +61,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
-|text|text|null: false|
+|text|text||
 |user_id|integer|null: false, foreign_key: true|
 |groups_users_id|integer|null: false, foreign_key: true|
 ### Association
