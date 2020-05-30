@@ -34,7 +34,7 @@ Things you may want to cover:
 |password confirmation|string|null: false|
 ### Association
 - has_many :groups, through: groups_users
-- has_many :tweets
+- has_many :messages
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -55,7 +55,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## tweetsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
@@ -64,15 +64,4 @@ Things you may want to cover:
 |groups_users_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- has_many :comment
 
-## commentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|groups_users_id|integer|null: false, foreign_key: true|
-|tweets_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :tweet
-- belongs_to :user
