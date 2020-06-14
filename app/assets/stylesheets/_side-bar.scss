@@ -1,0 +1,70 @@
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  float: left;
+
+  .user-name {
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    .box {
+      height: 20px;
+      width: 260px;
+      position: relative;
+      color: #d8d8d8;
+    
+      .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        color: #ffffff;
+        font-size: 16px;
+      }
+      .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: center;
+        width: 60px;
+        position: absolute;
+        right: 0;
+      
+        .user-edit {
+          color: #ffffff;
+          margin-right: 5px;
+        }
+        .cog {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .group-list {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  
+    .box {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    
+      .group-name {
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .message {
+        font-size: 11px;
+        color: #ffffff;
+      }
+    }  
+  }
+}

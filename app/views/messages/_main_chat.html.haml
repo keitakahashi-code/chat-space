@@ -1,0 +1,26 @@
+.main
+  .chat__header
+    .left-box
+      .current-group
+        test
+      .members
+        member:masa
+    %input{type: "submit", class: "edit-btn", value: "Edit"}
+
+  .chat__message-list
+    .box
+      .top
+        .name
+          masa
+        .datetime
+          2020/06/13(Sat)15:12:41
+      .message
+        おはよう！
+  .chat__message-form
+    .box
+      %input{type: "text" ,class: "box__text" , placeholder: "type a message"}
+      %label{class: "box__img"}
+        = icon('fa', 'image')
+        %input{type: "file", class: "box__img__file"}
+    %input{type: "submit", class: "box__send", value: "Send"}
+
