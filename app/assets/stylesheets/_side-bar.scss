@@ -32,16 +32,17 @@
         flex-direction: row;
         justify-content: flex-end;
         text-align: center;
-        width: 60px;
-        position: absolute;
+        position: relative;
         right: 0;
       
         .user-edit {
           color: #ffffff;
-          margin-right: 5px;
+          position: absolute;
+          left: 220px;
         }
-        .cog {
+        .icon {
           color: #ffffff;
+          position: absolute;
         }
       }
     }

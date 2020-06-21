@@ -2,12 +2,12 @@
   .user-name
     .box
       .name
-        masa
+        =current_user.name
       .icon
         =link_to "#" do
           .far.fa-edit.user-edit
-        =link_to "#" do
-          .fas.fa-cog.cog
+        =link_to edit_user_path(current_user) do
+          =icon('fas', 'cog', class: 'icon')
   .group-list
     .box
       .group-name
