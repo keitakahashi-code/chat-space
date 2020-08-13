@@ -4,13 +4,15 @@
       .name
         =current_user.name
       .icon
-        =link_to "#" do
+        =link_to new_group_path do
           .far.fa-edit.user-edit
         =link_to edit_user_path(current_user) do
           =icon('fas', 'cog', class: 'icon')
   .group-list
+    - current_user.groups.each do |group|
     .box
-      .group-name
-        tech-camp
-      .message
-        まだメッセージはありません
+      = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。

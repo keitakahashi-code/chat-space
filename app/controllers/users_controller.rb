@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
 
   def edit
+    if new_group.edit("#")
+      redirect_to root_path
+      begin
+        render :edit
+      end
+    end
   end
 
   def update
